@@ -3,11 +3,14 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 
+
 const User = require('./models/users');
 
 const PORT = 3000;
 
 const app = express();
+
+
 
 app.set('view engine', 'ejs');
 
@@ -67,4 +70,4 @@ app.route('/register')
     });
 
 
-``
+ 
